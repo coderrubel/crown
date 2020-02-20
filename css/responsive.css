@@ -1,0 +1,15 @@
+/*  For laptop */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* For Tab device */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/*  For mobile device */
+@media (max-width: 767px) {
+}
+
+/*  For landscape mobile device */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
