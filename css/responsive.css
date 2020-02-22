@@ -8,28 +8,42 @@
 
 /*  For mobile device */
 @media (max-width: 767px) {
-	.hero h2,
-.about h2,
-.features h2,
-.investment_area h2,
-.referral h2,
-.faq h2,
-.statistics h2,
-.our_news h2,
-.our_team h2,
-.paymetn h2,
-.heading h2 {
-  font-size: 32px;
-  font-weight: 600;
-}
-	.hero a {
+  .hero h2,
+  .about h2,
+  .features h2,
+  .investment_area h2,
+  .referral h2,
+  .faq h2,
+  .statistics h2,
+  .our_news h2,
+  .our_team h2,
+  .paymetn h2,
+  .heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .hero a {
     border-radius: 20px;
     padding: 15px 35px;
     color: #fff;
     font-size: 16px;
     margin: 15px auto;
     font-weight: 400;
-}
+  }
+  .footer {
+    padding: 20px 0;
+  }
+  .features_ruound::after {
+    background: none;
+  }
+  .features_ruound::before {
+    display: none;
+  }
+  .f_m {
+    margin-top: -30px;
+    margin-left: 20px;
+    text-align: left;
+  }
 }
 
 /*  For landscape mobile device */

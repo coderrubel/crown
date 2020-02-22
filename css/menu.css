@@ -66,8 +66,8 @@ nav {
 /* mobile view */
 @media (max-width: 500px) {
   .navbar-nav {
-    background-color: #000;
-    border-top: 3px solid #fed136;
+    background-color: #1a0a53;
+    border-top: 3px solid #c349ff;
     color: #fff;
     z-index: 1;
     margin-top: 5px;

@@ -3,7 +3,6 @@
   background-color: #2e1b77;
   padding-top: 75px;
   z-index: 1;
-  overflow: hidden;
 }
 .hero:before {
   position: absolute;
@@ -22,6 +21,7 @@
   position: absolute;
   right: -240px;
   top: 80px;
+  z-index: -1;
 }
 .hero h2,
 .about h2,
@@ -105,29 +105,66 @@
 /* End About Section */
 
 /* Start features Section */
-.features_ruound:after{
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  height: 50px
-  background-image: url(../image/shap/about.png);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  z-index: 11;
+.features_ruound{
+  position: relative;
+  z-index: 1;
 }
-.singel_features{
-  width: 300px
-  height:200px;
+.features_ruound::after {
+	position: absolute;
+	content: "";
+	top: 105px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../image/shap/about.png);
+	background-repeat: no-repeat;
+	z-index: -1;
+	background-position: top center;
 }
-.p-left{
-  padding-left: 50px;
+.features_ruound::before {
+	position: absolute;
+	font-family: "Font Awesome 5 Brands";
+	font-size: 48px;
+	content: "\f15a";
+	top: calc(38% - 50px);
+	left: calc(50% - 50px);
+	width: 100px;
+	height: 100px;
+	background-color: #038ffb;
+	z-index: -1;
+	border-radius: 50%;
+	background-position: top center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
 }
-.p-right{
-  padding-right: 50px;
+.singel_features {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	color: #fff;
 }
-
+.features_icon {
+	padding: 20px;
+	border-radius: 50%;
+  margin: 15px;
+  background: #00e9e3;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 48px;
+  padding: 15px 0 0 0;
+  /* margin: 0 auto; */
+}
+.f_m{
+  margin-top: -95px;
+}
+.reatures_text {
+	font-size: 24px;
+}
 
 .features {
   padding: 40px 0;
@@ -669,9 +706,10 @@
   font-size: 30px;
 }
 .footer p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 25px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: justify;
 }
 .footer .f_btn {
   border-radius: 25px;
@@ -691,11 +729,13 @@
 }
 .footer ul li a {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
 .footer ul li:hover a {
-  color: #01e8ff;
-  border-bottom: 1px solid #01e8ff;
+	color: #01e8ff;
+	margin-left: 10px;
+	transition: all 0.3s ease;
 }
 
 /* Login Page */
