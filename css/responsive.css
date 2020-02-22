@@ -8,6 +8,28 @@
 
 /*  For mobile device */
 @media (max-width: 767px) {
+	.hero h2,
+.about h2,
+.features h2,
+.investment_area h2,
+.referral h2,
+.faq h2,
+.statistics h2,
+.our_news h2,
+.our_team h2,
+.paymetn h2,
+.heading h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+	.hero a {
+    border-radius: 20px;
+    padding: 15px 35px;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px auto;
+    font-weight: 400;
+}
 }
 
 /*  For landscape mobile device */

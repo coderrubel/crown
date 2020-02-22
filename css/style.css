@@ -3,6 +3,7 @@
   background-color: #2e1b77;
   padding-top: 75px;
   z-index: 1;
+  overflow: hidden;
 }
 .hero:before {
   position: absolute;
@@ -104,6 +105,30 @@
 /* End About Section */
 
 /* Start features Section */
+.features_ruound:after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 50px
+  background-image: url(../image/shap/about.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  z-index: 11;
+}
+.singel_features{
+  width: 300px
+  height:200px;
+}
+.p-left{
+  padding-left: 50px;
+}
+.p-right{
+  padding-right: 50px;
+}
+
+
 .features {
   padding: 40px 0;
   background-color: #191b65;
@@ -220,8 +245,13 @@
   align-content: center;
 }
 .investmetn_img img {
-  border-radius: 35%;
+  border-radius: 50%;
   cursor: pointer;
+}
+.investmetn_img img:hover {
+    background: red;
+    content: "red"
+    color:#fff;
 }
 .investment_area h3 {
   color: #fff;
@@ -255,10 +285,11 @@
   background-color: #00a9ff;
 }
 .investment_area .color_3 {
-  background-color: #4033fe;
+   background-color: #ba00ff;
 }
 .investment_area .color_4 {
-  background-color: #ba00ff;
+ 
+  background-color: #4033fe;
 }
 
 /* End Investment_area */
@@ -400,7 +431,7 @@
   color: #342276;
   border-radius: 50%;
   content: "\f067";
-  padding: 12px;
+  padding: 10px;
   top: calc(50% - 20px);
   font-family: "Font Awesome\ 5 Free";
   font-size: 16px;
@@ -447,7 +478,7 @@
 
   .accordion_wrapper .accordion .card .card-header button.btn.btn-link:after {
     right: 8px;
-    top: calc(50% - 14px);
+    top: calc(50% - 24px)
   }
 
   .accordion_wrapper .accordion .card .card-body {
