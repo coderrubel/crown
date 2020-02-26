@@ -359,15 +359,18 @@
 /* End Investment_area */
 
 /* Start Referral Area */
-.referral {
+.referral,
+.our_team {
   position: relative;
   background-image: url(../image/shap/referral.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding: 40px 0;
+  position: relative;
 }
-.referral:before {
+.referral:before,
+.our_team:before {
   position: absolute;
   content: "";
   background-color: #1a0a53;
@@ -553,18 +556,18 @@
 /* End FAQ */
 
 /* Start Statistics Area */
-.feature_area {
+.statistics_1 {
   position: relative;
   z-index: 1;
-  padding: 120px 0;
+  padding: 20px 0 60px;
   background-color: #1a0b54;
 }
-.feature_area:after {
+.statistics_1:after {
   position: absolute;
   z-index: -1;
-  left: 0;
-  top: 0;
-  width: 100%;
+  left: -50px;
+  top: 0px;
+  width: 107%;
   height: 100%;
   content: "";
   background-image: url("../image/shap/s.png");
@@ -584,49 +587,24 @@
 .odd,
 .even {
   text-align: center;
-  width: 150px;
+  position: relative;
 }
+.odd {
+  top: 70px;
+}
+
 .odd .s_img {
-  margin-bottom: 78px;
+  margin-bottom: 130px;
 }
 .even .s_text {
-  margin-bottom: 85px;
+  margin-bottom: 130px;
 }
-.s_box1 {
-  position: absolute;
-  left: 55px;
-  width: 150px;
-  top: -86px;
-}
-.s_box2 {
-  position: absolute;
-  top: -121px;
-  left: 204px;
-}
-.s_box3 {
-  position: absolute;
-  top: -80px;
-  left: 350px;
-}
-.s_box4 {
-  position: absolute;
-  top: -124px;
-  right: 495px;
-}
-.s_box5 {
-  position: absolute;
-  top: -80px;
-  right: 349px;
-}
-.s_box6 {
-  position: absolute;
-  top: -121px;
-  right: 204px;
-}
-.s_box7 {
-  position: absolute;
-  right: 59px;
-  top: -80px;
+
+.cols-7 {
+  min-width: 115px;
+  width: calc(13% - 20px);
+  margin: 0 10px;
+  margin-bottom: 20px;
 }
 
 .statistics h4 {
@@ -657,27 +635,32 @@
 /* End Statistics Area */
 
 /* Start our News */
-.our_news {
+.our_news,
+.paymetn {
   text-align: center;
   padding: 40px 0;
-  background-image: url(../image/bg_img/2.jpg);
+  background-color: #392477;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
 }
-.our_news:beofe {
-  background-color: #392477;
+.our_news:before,
+.paymetn::before {
   position: absolute;
   content: "";
+  background-image: url(../image/bg_img/2.jpg);
   width: 100%;
   height: 100%;
   top: 0;
+  z-index: -1;
   left: 0;
 }
 .news {
   background-color: #190a53;
   color: #fff;
   padding: 35px 20px;
-  text-align: justify;
+  text-align: left;
   font-size: 20px;
   border-radius: 7px;
   transition: all 0.3s ease-in-out;
@@ -697,11 +680,11 @@
 /* End Our News */
 
 /* Start our Team */
-.our_team {
+/* .our_team {
   text-align: center;
   padding: 40px 0;
   background-color: #191660;
-}
+} */
 .team {
   background-color: #190a53;
   color: #fff;
@@ -725,13 +708,9 @@
 /* End Our Team */
 
 /* Start Payment Method */
-.paymetn {
-  padding: 40px 0;
-  text-align: center;
-  background-color: #2e1b77;
-}
 .pay_img {
   transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 .pay_img:hover {
   transform: scale(1.1);
@@ -746,9 +725,10 @@
   color: #fff;
 }
 .footer h3 {
-  color: #01e8ff;
+  color: #00e9e3;
   font-weight: 600;
   font-size: 30px;
+  margin-bottom: 5px;
 }
 .footer p {
   font-size: 20px;
@@ -759,22 +739,30 @@
 .footer .f_btn {
   border-radius: 25px;
   padding: 12px 35px;
-  border: 3px solid #a700ff;
   font-size: 20px;
-  color: #a700ff;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, rgb(38, 215, 212), rgb(0, 136, 254)) repeat scroll
+    0% 0%;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   transition: all 0.3s ease;
 }
 .footer .f_btn:hover {
-  background-color: #01e8ff;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to left, rgb(38, 215, 212), rgb(0, 136, 254)) repeat scroll
+    0% 0%;
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
+}
+.footer ul {
+  display: inline-block;
 }
 .footer ul li {
   padding: 5px 0;
 }
 .footer ul li a {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 .footer ul li:hover a {

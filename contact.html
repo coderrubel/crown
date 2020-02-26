@@ -10,7 +10,7 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive.css" rel="stylesheet" type="text/css" />
-    <title>Login</title>
+    <title>Contact Us</title>
   </head>
   <body>
     <header>
@@ -53,7 +53,7 @@
                     <a class="nav-link" href="FAQ.html">FAQ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact_us.html">CONTACT US</a>
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
                   </li>
                 </ul>
               </div>
@@ -63,70 +63,61 @@
       </div>
     </header>
 
-    <!-- Start login section-->
-    <section class="login_area">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-12 mb-3">
-            <div class="heading">
-              <h2>Access <span>Account</span></h2>
-            </div>
+ <!-- Start Account_info section-->
+ <section class="account_info_area">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 mb-3">
+          <div class="heading">
+            <h2>Contact  <span>Us</span></h2>
           </div>
         </div>
-        <form>
-          <div class="row justify-content-center align-item-center">
-            <div class="col-lg-5 col-md-8 col-12">
-              <div class="lorgin_wrap">
-                <label for="inputname"
-                  ><i class="far fa-user fontwes"></i>Username:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputname"
-                  placeholder="Username"
-                />
-                <label for="inputPassword3"
-                  ><i class="fas fa-key fontwes"></i>Password:</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputPassword3"
-                  placeholder="Password"
-                />
-                <div class="pas_show"><i class="ti-eye ptxt"></i></div>
-                <label for="inputcapcha" class="capcha"
-                  >Varification Code:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputcaptha"
-                  placeholder="varification Code"
-                />
-                
-                <a href="">Forgot password?</a>
-                <div class="col-md-5 mt-2">
-                    <div class="text-center">
-                      <button type="submit" class="boxed_btn">Sign in</button>
-                    </div>
-                  </div>
+      </div>
+      <form action="index.html">
+        <div class="row justify-content-center align-item-center">
+          <div class="col-md-5 ">
+            <div class="lorgin_wrap">
+              <label for="full_username">Your Full Name:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="full_username" placeholder="">
+              </div>
+              <label for="email">E-mail Address:</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                </div>
+                <input type="text" class="form-control" id="email" placeholder="">
+              </div>
+              <label for="username">Your Message:</label>
+              <textarea class="form-control" id="username" rows="4" placeholder="Typeing Your Massage...."></textarea>
               </div>
             </div>
           </div>
-          
-        <div class="row justify-content-center align-item-center sing_up">
-            <div class="col-md-5">
-              <p>Not a member yet?</p><br><br>
-              <a href="singup.html" class="boxed_btn">Sign Up Here</a>
-            </div>
         </div>
+        
+        <!-- 
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+          <label class="custom-control-label" for="customCheck">I agree with our <a href="`#">Terms &amp; Conditions</a>
+            and <a href="#">Privacy
+              Policy</a>.</label>
+        </div> -->
+
+        <div class="row  justify-content-center align-item-center sing_up">
+          <div class="col-md-5 ">
+            <div class="text-center">
+              <button type="submit" class="boxed_btn">Sign in</button>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
-    <!-- End login section -->
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- End Account_info section -->
+
 
     <!-- Fotter -->
     <section class="footer">

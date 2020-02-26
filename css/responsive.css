@@ -8,6 +8,10 @@
 
 /*  For mobile device */
 @media (max-width: 767px) {
+  .navbar-nav .nav-item .nav-link {
+    padding: 5px 0px;
+    font-size: 16px;
+  }
   .hero h2,
   .about h2,
   .features h2,
@@ -48,4 +52,72 @@
 
 /*  For landscape mobile device */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .singel_features {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0px;
+    color: #fff;
+  }
+  .f_m {
+    margin-top: 20px;
+  }
+}
+
+/* for feature section */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cols-7 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .cols-7 {
+    width: calc(33% - 20px);
+  }
+  .odd {
+    top: 0px;
+  }
+  .even .s_img,
+  .odd .s_img {
+    margin: 15px;
+  }
+  .even .s_text,
+  .odd .s_text {
+    margin: 10px;
+  }
+  .statistics_1:after {
+    display: none;
+  }
+  .odd,
+  .even {
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cols-7 {
+    width: calc(100% - 20px);
+  }
+  .odd,
+  .even {
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+  .odd {
+    top: 0px;
+  }
+  .even .s_img,
+  .odd .s_img {
+    margin: 15px;
+  }
+  .even .s_text,
+  .odd .s_text {
+    margin: 10px;
+  }
+  .statistics_1:after {
+    display: none;
+  }
 }
