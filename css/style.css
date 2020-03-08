@@ -355,6 +355,111 @@
 .investment_area .color_4 {
   background-color: #4033fe;
 }
+/* New Investmetn  */
+.investment_plan {
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: #0b3d4d;
+  width: 100%;
+}
+.investment_plan p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-align: left;
+  margin: 10px;
+  border-radius: 10px;
+  background: #5e7099;
+}
+.investment_plan .plan_comison {
+  background: #c249ff;
+  color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+  position: absolute;
+  top: -50px;
+  left: 97px;
+  border: 5px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.investment_plan .plan_comison h1 {
+  font-size: 16px;
+}
+.investment_plan .plan_comison h1 span {
+  font-size: 24px;
+}
+.investment_plan .plan_title {
+  background: #ce6dff;
+  padding: 60px 20px 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.investment_plan .plan_title h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.plan_btn {
+  background: #c249ff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+.plan_btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #ddd;
+}
+/* plan no 2 */
+.plan2 {
+  background: #0b3d4d;
+}
+.plan2 .plan_comison {
+  background: #9b3acc;
+}
+.plan2 .plan_title {
+  background: #ae41e5;
+}
+.plan2 .plan_btn {
+  background: #9b3acc;
+}
+/* plan no 3 */
+.plan3 {
+  background: #0b3d4d;
+}
+.plan3 .plan_comison {
+  background: #742b99;
+}
+.plan3 .plan_title {
+  background: #8733b2;
+}
+.plan3 .plan_btn {
+  background: #742b99;
+}
+/* plan no 4 */
+.plan4 {
+  background: #0b3d4d;
+}
+.plan4 .plan_comison {
+  background: #4d1d66;
+}
+.plan4 .plan_title {
+  background: #61247f;
+}
+.plan4 .plan_btn {
+  background: #4d1d66;
+}
 
 /* End Investment_area */
 
